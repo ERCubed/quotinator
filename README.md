@@ -8,31 +8,38 @@ Blah
 ## Usage
 
 Just include The Quotinator to your gemfile:
-> `gem "quotinator"`
+`gem "quotinator"`
 
 Then call any of the functions while passing in the string you wish to clean up. 
-> `Quotinator.replace("It's your text, why not clean it up?")`
+`Quotinator.replace("It's your text, why not clean it up?")`
 
 ## Available functions
 
-*about*
+`about`
+
 Outputs a brief description of what the gem does. Pretty much a useless function. 
 
-*replace(txt)*
+`replace(txt)`
+
 Shorthand function for `replace_all()`
 
-*replace_all(txt)*
+`replace_all(txt)`
+
 Function which handles replacing all known "special" characters.
 
-*doublequotes(txt)*
+`doublequotes(txt)`
+
 Replaces only the special double quotation marks
   
-*singlequotes(txt)*
+`singlequotes(txt)`
+
 Replaces only the special single quotation marks
   
-*ellipsis(txt)*
+`ellipsis(txt)`
+
 Replaces only the special ellipsis (...)
   
-*longdash(txt)*
+`longdash(txt)`
+
 Replaces only the special long dash
 
