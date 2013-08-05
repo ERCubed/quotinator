@@ -24,17 +24,15 @@ class Quotinator
   end
   
   def self.doublequotes(txt)
-    txt.gsub!(/”/,'"')
-    txt.gsub!(/“/,'"')
+    txt = txt.gsub(/”/,'"').gsub(/“/,'"')
     # There seems to be two different sets of special quotes.
-    txt.gsub!(/”/,'"')
-    txt.gsub!(/“/,'"')
+    txt = txt.gsub(/”/,'"').gsub(/“/,'"')
+    txt.gsub!(/[\u201c\u201d]/, '"')
     return txt
   end
   
   def self.singlequotes(txt)
-    txt.gsub!(/’/,"'")
-    txt.gsub!(/‘/,"'")
+    txt = txt.gsub(/’/,"'").gsub(/‘/,"'")
     return txt
   end
   
