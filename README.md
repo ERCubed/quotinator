@@ -1,6 +1,8 @@
 # The Quotinator
 ================
 
+[![Gem Version](https://badge.fury.io/rb/quotinator.png)](http://badge.fury.io/rb/quotinator)
+
 ## Background
 
 I got tired of writing a bunch substitutions to handle the Microsoft fancy quotes and other such special characters. So what better way to never have to do it again than by putting it all into a gem?
